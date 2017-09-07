@@ -1,0 +1,162 @@
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+.cat-sidebar {
+	width: 40%;
+	height: 100%;
+	background-color: #ededed;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-width: 250px;
+}
+
+.content {
+	width: 100%;
+}
+
+.cat-list {
+	width: 100%;
+	list-style-type: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+.cat-list li {
+	display: flex;
+	padding: 10px;
+}
+
+.cat-list li:hover {
+	background-color: #c1bebe;
+	cursor:pointer;
+}
+
+.cat-list li.selected {
+	background-color: #ff6161;
+	color: #fff;
+}
+
+.cat-image {
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	margin-right: 10px;
+}
+
+.cat-content-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.cat-content img {
+	width: 80%;
+	border-radius: 3px;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.cat-name {
+	font-size: 0.9em;
+}
+
+.cat-display {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.admin {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.admin-form-container {
+	display: none;
+	width: 50%;
+}
+
+.button-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.admin-button {
+	display: none;
+	padding: 10px 0;
+	width: 200px;
+	border: none;
+	font-size: 1.1em;
+	margin-top: 20px;
+	border-radius: 3px;
+	color: #fff;
+	font-family: sans-serif;
+	background-color: #ff6161;
+	box-shadow: 1px 1px 2px rgba(0,0,0, 0.4);
+}
+
+.admin-form-container form {
+	flex-direction: column;
+}
+
+.admin-form-container form input[type="text"] {
+	width: 100%;
+	padding: 10px 0;
+	border: none;
+	background-color: #ededed;
+	border-radius: 3px;
+	margin: 8px 0;
+}
+
+.change-form-button,
+.change-form-cancel {
+	width: calc((100% - 10px) / 2);
+	padding: 10px 0;
+	margin-top: 15px;
+	border: none;
+	border-radius: 3px;
+	font-size: 1.1em;
+}
+
+.change-form-button {
+	float: right;
+	color: #fff;
+	font-family: sans-serif;
+	background-color: #ff6161;
+	box-shadow: 1px 1px 2px rgba(0,0,0, 0.4);
+	margin-right: 0;
+}
+
+.change-form-cancel {
+	background-color: #bbb9b9;
+	color: #fff;
+}
+
+.form-button-wrapper {
+	display: fle;
+}
+
+label {
+	padding: 5px;
+	font-family: sans-serif;
+}
+
+.flex {
+	display: flex;
+}
+
+.visible {
+	display: block;
+}
