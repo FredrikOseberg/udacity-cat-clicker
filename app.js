@@ -75,7 +75,6 @@ var controller = {
 		return model.admin;
 	},
 	setModelProps: function(name = model.name, imageurl = model.url, count = model.count) {
-		console.log(name, imageurl, count);
 		model.currentCat.name = name;
 		model.currentCat.url = imageurl;
 		model.currentCat.count = parseInt(count);
@@ -155,7 +154,6 @@ var views = {
 		const isAdmin = controller.getAdminProperty();
 		if (isAdmin) {
 			const adminContent = document.querySelector('.button-container');
-			console.log(adminContent);
 			const adminButton = document.createElement('button');
 			adminButton.textContent = 'Admin';
 			adminButton.classList.add('admin-button', 'visible');
