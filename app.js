@@ -76,7 +76,7 @@ var controller = {
 	},
 	setModelProps: function(name = model.name, imageurl = model.url, count = model.count) {
 		model.currentCat.name = name;
-		model.currentCat.url = imageurl;
+		model.currentCat.picture = imageurl;
 		model.currentCat.count = parseInt(count);
 	}
 };
